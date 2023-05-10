@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --primary-color: #49BDA8;
+}
+
+/* i {
+    color: white;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins Pro", "Helvetica Neue",;
+}
+
+header, section {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 60px 200px;
+    width: 1920px;
+    margin: 0 auto;
+    height: 499px;
+    background: var(--primary-color);
+    color: white;
+}
+
+html,
+.slide__introduce {
+    position: relative;
+    height: 100%;
+}
+
+.slide__introduce {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides::before,
+.slides::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slides::before {
+    left: 0;
+    top: 0;
+}
+
+.slides::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.member1, .member2, .member3, .member4, .member5, .member6{
+    width: 195px;
+    height: 342px;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100px;
+}
+
+.member1 {
+    background: url('card-teacher (1).png');
+}
+
+.member2 {
+    background: url('Frame 36954.png');
+}
+
+.member3 {
+    background: url('Frame 36955.png');
+}
+
+.member4 {
+    background: url('Frame 36956.png');
+}
+
+.member5 {
+    background: url('Frame 36958.png');
+}
+
+.member6 {
+    background: url('Frame 36957.png');
+}
+
+.blurr{
+    background: linear-gradient(0deg, rgba(73, 189, 168, 0.85), rgba(73, 189, 168, 0.85)), url(image.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width:660px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .section__header,
+    .section__awards {
+        max-width: 600px;
+    }
+
+    footer {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .section__header .header__nav {
+        display: none;
+    }
+
+    .section__banner {
+        display: none;
+    }
+    
+    .container__fix {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section__directional {
+        padding: 10px;
+    }
+
+    .section__introduce {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .section__introduce img {
+        padding-top: 10px;
+    }
+
+    .slide__introduce--tablet,
+    .slide__introduce--desktop {
+        display: none;
+    }
+
+    .section__dominance--infrastructure,
+    .section__dominance--people,
+    .section__dominance--technology {
+        display: block;
+    }
+
+    .section__dominance--infrastructure img
+    .section__dominance--people img,
+    .section__dominance--technology img {
+        padding-bottom: 10px;
+    }
+
+    .section__dominance--people--icon {
+        left: 0;
+    }
+    
+    .section__dominance p {
+        padding: 10px 0;
+    }
+
+    .section__our-team--desktop {
+        display: none;
+    }
+
+    .section__awards--box-content {
+        display: block;
+    }
+
+    .section__awards--box-content p {
+        padding-bottom: 10px;
+    }
+
+    .section__awards--box-content {
+        padding: 20px;
+    }
+
+    .section__culture--box {
+        display: block;
+    }
+
+    .section__culture--box-items {
+        margin: 0 auto 20px;
+    }
+
+    .section__partner--box-desktop {
+        display: none;
+    }
+
+    .footer__content {
+        display: block;
+    }
+
+    .footer__content-items {
+        padding-bottom: 20px;
+    }
+
+    .footer__content-items-title {
+        padding-bottom: 10px;
+    }
+
+    .footer__license {
+        display: block;
+    }
+    .footer__license--title {
+        padding-bottom: 10px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1200px) {
+    body {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .section__header,
+    .section__awards {
+        max-width: 992px;
+    }
+
+    footer {
+        max-width: 992px;
+        height: auto;
+    }
+
+    .section__header .header__nav {
+        display: none;
+    }
+
+    .section__banner {
+        display: none;
+    }
+    
+    .container__fix {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .section__header.header__btn--show-menu {
+        display: none;
+    }
+
+    .section__directional {
+        padding-left: 20px;
+    }
+    
+    .section__introduce {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .section__introduce img {
+        padding-top: 20px;
+    }
+
+    .slide__introduce--mobile,
+    .slide__introduce--desktop { 
+        display: none;
+    }
+
+    .section__dominance--infrastructure--icon {
+        right: -20px;
+        bottom: -30px;
+    }
+    
+    .section__dominance--people--icon {
+        top: -30px;
+        left: -20px;
+    }
+
+    .section__dominance--technology--icon {
+        bottom: -30px;
+        right: -20px;
+    }
+
+    .section__our-team--desktop {
+        display: none;
+    }
+
+    .section__awards--box-content {
+        display: block;
+    }
+
+    .section__awards--box-content {
+        display: block;
+    }
+
+    .section__awards--box-content p {
+        padding-bottom: 10px;
+    }
+
+    .section__awards--box-content {
+        padding: 20px;
+    }
+
+    .section__culture--box {
+        display: block;
+    }
+
+    .section__culture--box-items {
+        margin: 0 auto 20px;
+    }
+
+    .section__partner--box-mobile, 
+    .section__partner--box-desktop {
+        display: none;
+    }
+
+
+    .footer__content {
+        display: block;
+    }
+
+    .footer__content-items {
+        padding-bottom: 20px;
+    }
+
+    .footer__content-items-title {
+        padding-bottom: 10px;
+    }
+
+    .footer__license {
+        display: block;
+    }
+    .footer__license--title {
+        padding-bottom: 10px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 990px) {
+    .header__btn--show-menu {
+        display: none;
+    }
+
+    .slide__introduce--mobile,
+    .slide__introduce--tablet {
+        display: none;
+    }
+
+    .section__our-team--phone {
+        display: none;
+    }
+
+    .section__partner--box-mobile,
+    .section__partner--box-tablet {
+        display: none;
+    }
+}
